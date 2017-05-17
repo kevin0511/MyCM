@@ -21,13 +21,14 @@
 		0AA4C6E91EC8C8D800F84930 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6E81EC8C8D800F84930 /* UIBarButtonItem-Extension.swift */; };
 		0AA4C6F21ECA047800F84930 /* ActivityMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6F11ECA047800F84930 /* ActivityMainViewModel.swift */; };
 		0AA4C6F51ECA049900F84930 /* ActivityMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6F41ECA049900F84930 /* ActivityMainModel.swift */; };
-		0AA4C6FE1ECA102100F84930 /* ShootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6FD1ECA102100F84930 /* ShootViewController.swift */; };
 		0AA4C7001ECA102B00F84930 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6FF1ECA102B00F84930 /* PickViewController.swift */; };
 		0AA4C7021ECA103A00F84930 /* FoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7011ECA103A00F84930 /* FoodsViewController.swift */; };
 		0AA4C7041ECA104300F84930 /* SnacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7031ECA104300F84930 /* SnacksViewController.swift */; };
 		0AA4C7061ECA104E00F84930 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7051ECA104E00F84930 /* HotelViewController.swift */; };
 		0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7071ECA105600F84930 /* CyclingViewController.swift */; };
 		0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */; };
+		0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */; };
+		0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,13 +48,14 @@
 		0AA4C6E81EC8C8D800F84930 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		0AA4C6F11ECA047800F84930 /* ActivityMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityMainViewModel.swift; sourceTree = "<group>"; };
 		0AA4C6F41ECA049900F84930 /* ActivityMainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityMainModel.swift; sourceTree = "<group>"; };
-		0AA4C6FD1ECA102100F84930 /* ShootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootViewController.swift; sourceTree = "<group>"; };
 		0AA4C6FF1ECA102B00F84930 /* PickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		0AA4C7011ECA103A00F84930 /* FoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodsViewController.swift; sourceTree = "<group>"; };
 		0AA4C7031ECA104300F84930 /* SnacksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksViewController.swift; sourceTree = "<group>"; };
 		0AA4C7051ECA104E00F84930 /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		0AA4C7071ECA105600F84930 /* CyclingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclingViewController.swift; sourceTree = "<group>"; };
 		0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootViewModel.swift; sourceTree = "<group>"; };
+		0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainViewController.swift; sourceTree = "<group>"; };
+		0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +97,12 @@
 		0AA4C6CE1EC836D300F84930 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0AA4C6EA1EC9F4BB00F84930 /* Main */,
-				0AA4C6D21EC8378100F84930 /* Tools */,
+				0AFC0A321ECC0F66007F5186 /* Shoot */,
 				0AA4C6D11EC836E700F84930 /* Activity */,
 				0AA4C6D01EC836E400F84930 /* Export */,
 				0AA4C6CF1EC836E200F84930 /* Me */,
+				0AA4C6EA1EC9F4BB00F84930 /* Main */,
+				0AA4C6D21EC8378100F84930 /* Tools */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -226,8 +229,6 @@
 		0AA4C6F71ECA0BF800F84930 /* Shoot */ = {
 			isa = PBXGroup;
 			children = (
-				0AA4C6FD1ECA102100F84930 /* ShootViewController.swift */,
-				0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */,
 			);
 			name = Shoot;
 			sourceTree = "<group>";
@@ -272,6 +273,16 @@
 			name = Cycling;
 			sourceTree = "<group>";
 		};
+		0AFC0A321ECC0F66007F5186 /* Shoot */ = {
+			isa = PBXGroup;
+			children = (
+				0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */,
+				0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */,
+				0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */,
+			);
+			name = Shoot;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,7 +319,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0AA4C6B41EC836BE00F84930 /* Build configuration list for PBXProject "CM" */;
+			buildConfigurationList = 0AA4C6B41EC836BE00F84930 /* Build configuration list for PBXProject "cm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -344,10 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA4C6DF1EC8419800F84930 /* ActivityMainViewController.swift in Sources */,
+				0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */,
 				0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */,
-				0AA4C6FE1ECA102100F84930 /* ShootViewController.swift in Sources */,
 				0AA4C6E91EC8C8D800F84930 /* UIBarButtonItem-Extension.swift in Sources */,
 				0AA4C6D71EC838A700F84930 /* UIColor-Extension.swift in Sources */,
+				0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */,
 				0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */,
 				0AA4C6E51EC8C7B400F84930 /* PageContentView.swift in Sources */,
 				0AA4C6D91EC83C9600F84930 /* MainTabBarController.swift in Sources */,
@@ -499,7 +511,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AA4C6B41EC836BE00F84930 /* Build configuration list for PBXProject "CM" */ = {
+		0AA4C6B41EC836BE00F84930 /* Build configuration list for PBXProject "cm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AA4C6C91EC836BE00F84930 /* Debug */,

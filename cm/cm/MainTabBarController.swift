@@ -29,17 +29,19 @@ extension MainTabBarController{
         self.tabBar.isTranslucent = false   //避免受默认的半透明色影响，关闭
         self.tabBar.tintColor = kColorMainGreen
         
-        
+        let shootVC             = ShootMainViewController()
         let activityVC          = ActivityMainViewController()
         let exportVC            = ExportMainViewController()
         let meVC                = MeMainViewController()
         
-        let arrVcs              = [activityVC,exportVC,meVC]
-        let arrTitles           = ["郊游","出口","我"]
-        let arrImgs             = [UIImage(named:"tabbarActivity"),
+        let arrVcs              = [shootVC,activityVC,exportVC,meVC]
+        let arrTitles           = ["摄影","郊游","优选","我"]
+        let arrImgs             = [UIImage(named:"tabbarShoot"),
+                                   UIImage(named:"tabbarActivity"),
                                    UIImage(named:"tabbarExport"),
                                    UIImage(named:"tabbarMe")]
-        let arrImgsHighLight    = [UIImage(named:"tabbarActivityHL"),
+        let arrImgsHighLight    = [UIImage(named:"tabbarShootHL"),
+                                   UIImage(named:"tabbarActivityHL"),
                                    UIImage(named:"tabbarExportHL"),
                                    UIImage(named:"tabbarMeHL")]
         

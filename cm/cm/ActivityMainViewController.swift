@@ -18,7 +18,7 @@ class ActivityMainViewController: UIViewController {
         
         let titleFrame = CGRect(x: 0, y:kStateBarH + kNavgationBarH,
                                 width: kScreenW, height: kMainTitleViewH)
-        let titles = ["醉摄影","采摘","享美食","品小吃","酒店名宿","乐骑行"]
+        let titles = ["采摘园","享美食","品小吃","酒店名宿","乐骑行"]
         let titleView = PageTitleView(frame: titleFrame,
                                       titles: titles)
         titleView.delegate = self
@@ -33,14 +33,12 @@ class ActivityMainViewController: UIViewController {
         
         var childVcs    = [UIViewController]()
         
-        let shootVC     = ShootViewController()
         let pickVC      = PickViewController()
         let foodsVC     = FoodsViewController()
         let snackVC     = SnacksViewController()
         let hotelVC     = HotelViewController()
         let cyclingVC   = CyclingViewController()
         
-        childVcs.append(shootVC)
         childVcs.append(pickVC)
         childVcs.append(foodsVC)
         childVcs.append(snackVC)

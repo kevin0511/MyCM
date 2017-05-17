@@ -10,9 +10,8 @@ import UIKit
 
 class ShootViewModel: NSObject {
 
+    var model = ShootModel()
 }
-
-
 
 extension ShootViewModel :UITableViewDelegate,UITableViewDataSource {
     
@@ -20,13 +19,31 @@ extension ShootViewModel :UITableViewDelegate,UITableViewDataSource {
         return 20
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 200
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let identifier = "cell"
         let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: identifier)
-        cell.textLabel?.text =  "\(indexPath.row)"
+        
+        var str : NSString
+        
+        switch model.cellType {
+        case .AerialImage:
+            str = "AerialImage"
+        case .Township:
+            str = "Township"
+        case .Spring:
+            str = "Spring"
+        case .Summer:
+            str = "summer"
+        case .Autumn:
+            str = "autumn"
+        case .Winter:
+            str = "winter"
+        }
+        
+        cell.textLabel?.text =  "\(str)\(indexPath.row)"
         return cell
     }
 }

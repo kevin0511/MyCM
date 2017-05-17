@@ -29,6 +29,7 @@
 		0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */; };
 		0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */; };
 		0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */; };
+		0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootViewModel.swift; sourceTree = "<group>"; };
 		0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainViewController.swift; sourceTree = "<group>"; };
 		0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootModel.swift; sourceTree = "<group>"; };
+		0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				0AA4C6F61ECA0BD200F84930 /* ActivityMain */,
-				0AA4C6F71ECA0BF800F84930 /* Shoot */,
 				0AA4C6F81ECA0E4200F84930 /* Pick */,
 				0AA4C6F91ECA0E5200F84930 /* Foods */,
 				0AA4C6FA1ECA0E6E00F84930 /* Snacks */,
@@ -169,6 +170,7 @@
 			children = (
 				0AA4C6E21EC8C7B400F84930 /* PageTitleView.swift */,
 				0AA4C6E31EC8C7B400F84930 /* PageContentView.swift */,
+				0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -224,13 +226,6 @@
 				0AA4C6EE1ECA042400F84930 /* Model */,
 			);
 			name = ActivityMain;
-			sourceTree = "<group>";
-		};
-		0AA4C6F71ECA0BF800F84930 /* Shoot */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Shoot;
 			sourceTree = "<group>";
 		};
 		0AA4C6F81ECA0E4200F84930 /* Pick */ = {
@@ -363,6 +358,7 @@
 				0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */,
 				0AA4C6E51EC8C7B400F84930 /* PageContentView.swift in Sources */,
 				0AA4C6D91EC83C9600F84930 /* MainTabBarController.swift in Sources */,
+				0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */,
 				0AA4C7021ECA103A00F84930 /* FoodsViewController.swift in Sources */,
 				0AA4C7041ECA104300F84930 /* SnacksViewController.swift in Sources */,
 				0AA4C6D41EC837A600F84930 /* Common.swift in Sources */,

@@ -46,6 +46,9 @@ extension MarketClassifiedBtnsView {
             make.width.equalTo(kScreenW/2)
             make.bottom.equalTo(0)
         }
+        leftBtn.title.text = "当季优选"
+        leftBtn.subTitle.text = "当季优选介绍"
+        leftBtn.imgView.image = UIImage(named:"")
         
         self.addSubview(topBtn)
         topBtn.snp.makeConstraints { (make) in
@@ -54,6 +57,9 @@ extension MarketClassifiedBtnsView {
             make.width.equalTo(kScreenW/2)
             make.height.equalTo(self.bounds.size.height/2)
         }
+        topBtn.title.text = "崇明特产"
+        topBtn.subTitle.text = "崇明特色介绍"
+        topBtn.imgView.image = UIImage(named:"")
         
         self.addSubview(bottomBtn)
         bottomBtn.snp.makeConstraints { (make) in
@@ -62,6 +68,10 @@ extension MarketClassifiedBtnsView {
             make.width.equalTo(topBtn.snp.width)
             make.height.equalTo(topBtn.snp.height)
         }
+        bottomBtn.title.text = "生鲜"
+        bottomBtn.subTitle.text = "生鲜优选介绍"
+        bottomBtn.imgView.image = UIImage(named:"")
+        
         
         self.addSubview(lineHorizontal)
         lineHorizontal.backgroundColor = UIColor.lightGray
@@ -89,7 +99,6 @@ extension MarketClassifiedBtnsView {
             make.height.equalTo(0.6)
             make.width.equalTo(kScreenW)
         }
-        
         
         leftBtn.addTarget(self, action: #selector(leftBtnAction(sender:)), for: .touchUpInside)
         topBtn.addTarget(self, action: #selector(topBtnAction(sender:)), for: .touchUpInside)

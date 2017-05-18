@@ -20,3 +20,4 @@ let kMainTitleViewH     :CGFloat = 60
 let kColorMainGreen     = UIColor(r:68 ,g:188,b:180)
 let kColorMainTitle     = UIColor(r:58 ,g:58 ,b:58 )
 let kColorMainSubTitle  = UIColor(r:123,g:123,b:123)
+let kColorMainRed       = UIColor(r:232,g:77 ,b:77 )

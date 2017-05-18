@@ -27,6 +27,7 @@
 		0AA4C7061ECA104E00F84930 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7051ECA104E00F84930 /* HotelViewController.swift */; };
 		0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7071ECA105600F84930 /* CyclingViewController.swift */; };
 		0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */; };
+		0AD50A251ECD9533000A35F7 /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */; };
 		0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */; };
 		0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */; };
 		0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */; };
@@ -61,6 +62,7 @@
 		0AA4C7051ECA104E00F84930 /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		0AA4C7071ECA105600F84930 /* CyclingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclingViewController.swift; sourceTree = "<group>"; };
 		0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootViewModel.swift; sourceTree = "<group>"; };
+		0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainViewController.swift; sourceTree = "<group>"; };
 		0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootModel.swift; sourceTree = "<group>"; };
 		0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */,
 				0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */,
 				0AFC0A3D1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift */,
+				0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */,
 			);
 			name = Market;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				0AFC0A401ECD824B007F5186 /* CollectionHeaderView.swift in Sources */,
 				0AA4C6DB1EC8417C00F84930 /* MeMainViewController.swift in Sources */,
 				0AA4C6DD1EC8418800F84930 /* MarketMainViewController.swift in Sources */,
+				0AD50A251ECD9533000A35F7 /* MarketCollectionViewCell.swift in Sources */,
 				0AA4C7061ECA104E00F84930 /* HotelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

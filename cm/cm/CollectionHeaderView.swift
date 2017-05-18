@@ -54,7 +54,7 @@ extension CollectionHeaderView {
         self.imgViewR.contentMode = .scaleAspectFit
 
         self.addSubview(title)
-        title.text = "今日优选"
+        title.text = "当季优选"
         title.textColor = kColorMainTitle
         title.font = UIFont.systemFont(ofSize: 14)
         self.title.snp.makeConstraints { (make) in

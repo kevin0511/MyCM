@@ -64,7 +64,7 @@ extension PageTitleView{
     
     fileprivate func setupUI(){
         
-        if (titles.count == 3) {kLabWidth = kScreenW / CGFloat(titles.count)}
+        kLabWidth = kScreenW / CGFloat(titles.count)
         
         addSubview(scrollView)                  //1- 添加  scrollview
         scrollView.frame = bounds

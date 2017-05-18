@@ -36,7 +36,7 @@ extension MarkeBtn_Horizontal {
     
         self.addSubview(title)
         title.textColor = kColorMainTitle
-        title.font = UIFont.systemFont(ofSize: 16)
+        title.font = UIFont.systemFont(ofSize: 13)
         title.snp.makeConstraints { (make) in
             make.left.equalTo(10)
             make.bottom.equalTo(self.snp.centerY)
@@ -46,7 +46,7 @@ extension MarkeBtn_Horizontal {
         
         self.addSubview(subTitle)
         subTitle.textColor = kColorMainSubTitle
-        subTitle.font = UIFont.systemFont(ofSize: 14)
+        subTitle.font = UIFont.systemFont(ofSize: 10)
         subTitle.snp.makeConstraints { (make) in
             make.left.equalTo(title.snp.left)
             make.top.equalTo(title.snp.bottom)
@@ -59,7 +59,7 @@ extension MarkeBtn_Horizontal {
         imgView.clipsToBounds = true
         imgView.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
-            make.right.equalTo(-10)
+            make.right.equalTo(-20)
             make.size.equalTo(CGSize.init(width: widthImg, height: widthImg))
         }
         

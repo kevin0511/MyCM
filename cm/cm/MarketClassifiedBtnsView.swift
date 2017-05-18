@@ -47,8 +47,9 @@ extension MarketClassifiedBtnsView {
             make.bottom.equalTo(0)
         }
         leftBtn.title.text = "当季优选"
-        leftBtn.subTitle.text = "当季优选介绍"
-        leftBtn.imgView.image = UIImage(named:"")
+        leftBtn.subTitle.text = "选自崇明当季优质食品"
+        leftBtn.imgView.image = UIImage(named:"market_left")
+        leftBtn.backgroundColor = UIColor(r:203,g:244,b:245)
         
         self.addSubview(topBtn)
         topBtn.snp.makeConstraints { (make) in
@@ -59,8 +60,9 @@ extension MarketClassifiedBtnsView {
         }
         topBtn.title.text = "崇明特产"
         topBtn.subTitle.text = "崇明特色介绍"
-        topBtn.imgView.image = UIImage(named:"")
-        
+        topBtn.imgView.image = UIImage(named:"market_top")
+        topBtn.backgroundColor = UIColor(r:230,g:222,b:249)
+
         self.addSubview(bottomBtn)
         bottomBtn.snp.makeConstraints { (make) in
             make.left.equalTo(topBtn.snp.left)
@@ -70,11 +72,12 @@ extension MarketClassifiedBtnsView {
         }
         bottomBtn.title.text = "生鲜"
         bottomBtn.subTitle.text = "生鲜优选介绍"
-        bottomBtn.imgView.image = UIImage(named:"")
-        
-        
+        bottomBtn.imgView.image = UIImage(named:"market_bottom")
+        bottomBtn.backgroundColor = UIColor(r:248,g:247,b:225)
+
+        /*
         self.addSubview(lineHorizontal)
-        lineHorizontal.backgroundColor = UIColor.lightGray
+        lineHorizontal.backgroundColor = UIColor.white
         lineHorizontal.snp.makeConstraints { (make) in
             make.left.equalTo(topBtn.snp.left)
             make.top.equalTo(topBtn.snp.bottom)
@@ -83,7 +86,7 @@ extension MarketClassifiedBtnsView {
         }
         
         self.addSubview(lineLongitudinal)
-        lineLongitudinal.backgroundColor = UIColor.lightGray
+        lineLongitudinal.backgroundColor = UIColor.white
         lineLongitudinal.snp.makeConstraints { (make) in
             make.left.equalTo(leftBtn.snp.right)
             make.top.equalTo(0)
@@ -92,14 +95,14 @@ extension MarketClassifiedBtnsView {
         }
         
         self.addSubview(lineBottom)
-        lineBottom.backgroundColor = UIColor.lightGray
+        lineBottom.backgroundColor = UIColor.white
         lineBottom.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.bottom.equalTo(0)
             make.height.equalTo(0.6)
             make.width.equalTo(kScreenW)
         }
-        
+        */
         leftBtn.addTarget(self, action: #selector(leftBtnAction(sender:)), for: .touchUpInside)
         topBtn.addTarget(self, action: #selector(topBtnAction(sender:)), for: .touchUpInside)
         bottomBtn.addTarget(self, action: #selector(bottomBtnAction(sender:)), for: .touchUpInside)

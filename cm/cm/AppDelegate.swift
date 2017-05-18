@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
         
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        //UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
         return true
     }

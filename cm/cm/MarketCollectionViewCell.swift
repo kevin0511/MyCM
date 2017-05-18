@@ -14,6 +14,7 @@ class MarketCollectionViewCell: UICollectionViewCell {
     lazy var imgView        = UIImageView()
     lazy var title          = UILabel()
     lazy var subTitle       = UILabel()
+    lazy var subTitleKG     = UILabel()
     lazy var price          = UILabel()
     lazy var shoppingCart   = UIButton()
     lazy var ivTag          = UIImageView()
@@ -43,17 +44,18 @@ extension MarketCollectionViewCell {
             make.right.equalTo(0)
             make.height.equalTo(boundsWidth)
         }
-        imgView.backgroundColor = UIColor.lightGray
-        imgView.contentMode = .scaleAspectFit
-        
+        imgView.contentMode = .scaleAspectFill
+        imgView.clipsToBounds = true
+
         imgView.addSubview(ivTag)
         ivTag.snp.makeConstraints { (make) in
-            make.bottom.equalTo(-10)
+            make.top.equalTo(imgView.snp.bottom).offset(-30)
             make.left.equalTo(0)
-            make.width.equalTo(60)
-            make.height.equalTo(20)
+            make.width.equalTo(55)
+            make.height.equalTo(15)
         }
-        ivTag.backgroundColor = UIColor.red
+        ivTag.contentMode = .scaleAspectFill
+        ivTag.clipsToBounds = true
         
         
         self.addSubview(title)
@@ -61,22 +63,33 @@ extension MarketCollectionViewCell {
             make.top.equalTo(imgView.snp.bottom).offset(10)
             make.left.equalTo(0)
             make.right.equalTo(-5)
-            make.height.equalTo(20)
+            make.height.equalTo(16)
         }
         title.text = "当季优选"
         title.textColor = kColorMainTitle
-        title.font = UIFont.systemFont(ofSize: 16)
+        title.font = UIFont.systemFont(ofSize: 14)
         
         self.addSubview(subTitle)
         subTitle.snp.makeConstraints { (make) in
-            make.top.equalTo(title.snp.bottom).offset(4)
+            make.top.equalTo(title.snp.bottom).offset(5)
             make.left.equalTo(title.snp.left)
             make.right.equalTo(title.snp.right)
             make.height.equalTo(title.snp.height)
         }
         subTitle.text = "当季优选详情说明"
         subTitle.textColor = kColorMainSubTitle
-        subTitle.font = UIFont.systemFont(ofSize: 13)
+        subTitle.font = UIFont.systemFont(ofSize: 11)
+        
+        self.addSubview(subTitleKG)
+        subTitleKG.snp.makeConstraints { (make) in
+            make.top.equalTo(subTitle.snp.bottom)
+            make.left.equalTo(title.snp.left)
+            make.right.equalTo(title.snp.right)
+            make.height.equalTo(title.snp.height)
+        }
+        subTitleKG.text = "500克"
+        subTitleKG.textColor = kColorMainSubTitle
+        subTitleKG.font = UIFont.systemFont(ofSize: 11)
         
         
         self.addSubview(shoppingCart)

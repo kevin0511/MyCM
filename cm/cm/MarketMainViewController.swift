@@ -10,7 +10,7 @@ import UIKit
 
 private let kItemMargin:CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin)/2
-private let kItemH = kItemW * 1.5
+private let kItemH = kItemW * 1.5 + 10
 private let kHeaderViewH : CGFloat = 50
 private let kTopViewH : CGFloat = 140
 
@@ -39,7 +39,7 @@ class MarketMainViewController: UIViewController {
         //设置section内边距
         layout.sectionInset = UIEdgeInsets(top: 0, left: kItemMargin, bottom: 0, right: kItemMargin)
         
-        let collectionY = kStateBarH + kNavgationBarH + kTopViewH
+        let collectionY = kStateBarH + kNavgationBarH + kTopViewH + 10
         let collectionFrame = CGRect.init(x: 0, y: collectionY, width: kScreenW, height: kScreenH - collectionY)
         let collectionView = UICollectionView(frame: collectionFrame, collectionViewLayout: layout)
         collectionView.dataSource = self
@@ -55,8 +55,8 @@ class MarketMainViewController: UIViewController {
         }()
     
     
-    fileprivate lazy var collectionHead:CollectionHeaderView = {[weak self] in
-        let head = CollectionHeaderView.init(frame: CGRect.init(x: 10, y: 0, width: kScreenW-20, height: kHeaderViewH))
+    fileprivate lazy var collectionHead:MarketCollectionHeaderView = {[weak self] in
+        let head = MarketCollectionHeaderView.init(frame: CGRect.init(x: 10, y: 0, width: kScreenW-20, height: kHeaderViewH))
         head.backgroundColor = UIColor.white
         return head
     }()
@@ -116,6 +116,9 @@ extension MarketMainViewController:UICollectionViewDataSource,UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell :MarketCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! MarketCollectionViewCell
         
+        let imgName = "marketCell\(indexPath.row+1)"
+        cell.imgView.image = UIImage(named:imgName)
+        cell.ivTag.image = UIImage(named:"market_tag1")
         cell.shoppingCart.tag = kCellTag + indexPath.row
         cell.shoppingCart.addTarget(self, action: #selector(cellBtnAction(sender:)), for: .touchUpInside)
         return cell

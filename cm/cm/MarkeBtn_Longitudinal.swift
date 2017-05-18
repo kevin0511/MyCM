@@ -14,7 +14,7 @@ class MarkeBtn_Longitudinal: UIButton {
     lazy var title          = UILabel()
     lazy var subTitle       = UILabel()
     lazy var imgView        = UIImageView()
-    let widthImg :CGFloat   = 40
+    let widthImg :CGFloat   = 50
     // w/2 * 70   40*40  10
     override init(frame: CGRect) {
         
@@ -38,35 +38,31 @@ extension MarkeBtn_Longitudinal {
         imgView.clipsToBounds = true
         imgView.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp.centerX)
-            make.bottom.equalTo(self.snp.centerY).offset(-5)
+            make.bottom.equalTo(self.snp.centerY).offset(5)
             make.size.equalTo(CGSize.init(width: widthImg, height: widthImg))
         }
         
         self.addSubview(title)
         title.textColor = kColorMainTitle
-        title.font = UIFont.systemFont(ofSize: 16)
+        title.font = UIFont.systemFont(ofSize: 14)
         title.textAlignment = .center
         title.snp.makeConstraints { (make) in
-            make.top.equalTo(self.snp.centerY).offset(10)
+            make.top.equalTo(imgView.snp.bottom).offset(10)
             make.centerX.equalTo(self.snp.centerX)
             make.width.equalTo(self.snp.width)
-            make.height.equalTo(20)
+            make.height.equalTo(16)
         }
         
         self.addSubview(subTitle)
         subTitle.textColor = kColorMainSubTitle
-        subTitle.font = UIFont.systemFont(ofSize: 14)
+        subTitle.font = UIFont.systemFont(ofSize: 11)
         subTitle.textAlignment = .center
         subTitle.snp.makeConstraints { (make) in
-            make.top.equalTo(title.snp.bottom).offset(5)
+            make.top.equalTo(title.snp.bottom).offset(0)
             make.centerX.equalTo(self.snp.centerX)
             make.width.equalTo(self.snp.width)
             make.height.equalTo(20)
         }
         
-        
-        title.text = "优选水果"
-        subTitle.text = "严选优质进口水果"
-        imgView.backgroundColor = UIColor.lightGray
     }
 }

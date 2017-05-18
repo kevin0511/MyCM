@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class CollectionHeaderView: UIView {
+class MarketCollectionHeaderView: UIView {
 
     lazy var imgViewL   = UIImageView()
     lazy var imgViewR   = UIImageView()
@@ -29,14 +29,14 @@ class CollectionHeaderView: UIView {
 
 }
 
-extension CollectionHeaderView {
+extension MarketCollectionHeaderView {
 
     fileprivate func setupUI(){
         
         let ivWidth:CGFloat = 20
         
         self.addSubview(imgViewL)
-        self.imgViewL.snp.makeConstraints { (make) in
+        imgViewL.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
             make.left.equalTo(0)
             make.size.equalTo(CGSize.init(width: ivWidth, height: ivWidth))
@@ -45,7 +45,7 @@ extension CollectionHeaderView {
         self.imgViewL.contentMode = .scaleAspectFit
         
         self.addSubview(imgViewR)
-        self.imgViewR.snp.makeConstraints { (make) in
+        imgViewR.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
             make.right.equalTo(0)
             make.size.equalTo(CGSize.init(width: ivWidth, height: ivWidth))
@@ -57,7 +57,7 @@ extension CollectionHeaderView {
         title.text = "当季优选"
         title.textColor = kColorMainTitle
         title.font = UIFont.systemFont(ofSize: 14)
-        self.title.snp.makeConstraints { (make) in
+        title.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
             make.left.equalTo(imgViewL.snp.right).offset(5)
             make.size.equalTo(CGSize.init(width: 100, height: ivWidth))
@@ -69,7 +69,7 @@ extension CollectionHeaderView {
         btn.setTitleColor(kColorMainSubTitle, for:.normal);
         btn.titleLabel!.font = UIFont.systemFont(ofSize: 14)
         btn.titleLabel!.textAlignment = .right
-        self.btn.snp.makeConstraints { (make) in
+        btn.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
             make.right.equalTo(imgViewR.snp.left).offset(-5)
             make.size.equalTo(CGSize.init(width: 60, height: ivWidth))

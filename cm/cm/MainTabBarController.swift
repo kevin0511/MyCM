@@ -75,9 +75,9 @@ extension MainTabBarController{
     private func setNavControllerWithRootVC(rootVC:UIViewController) -> UINavigationController{
         
         let navC = UINavigationController.init(rootViewController: rootVC)
-        navC.navigationBar.barTintColor         = kColorMainGreen
+        navC.navigationBar.barTintColor         = UIColor.white
         navC.navigationBar.tintColor            = UIColor.yellow
-        navC.navigationBar.titleTextAttributes  = [NSForegroundColorAttributeName:UIColor.white]
+        navC.navigationBar.titleTextAttributes  = [NSForegroundColorAttributeName:kColorMainTitle]
         navC.popToRootViewController(animated: true)
         
         return navC;

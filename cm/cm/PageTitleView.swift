@@ -17,7 +17,7 @@ protocol PageTitleViewDelegate : class {
 //  MARK:- 定义常量
 private let kScrollLineH : CGFloat = 2
 private let kNormalColor : (CGFloat,CGFloat,CGFloat) = (170,170,170)        //元组
-private let kSelectColor : (CGFloat,CGFloat,CGFloat) = (28,221,177 )
+private let kSelectColor : (CGFloat,CGFloat,CGFloat) = (68,188,180) 
 
 //  MARK:- 定义PageTitleView类
 class PageTitleView: UIView {

@@ -8,6 +8,14 @@
 
 import UIKit
 
+private let kItemW                  = (kScreenW - 3 * kItemMargin)/2
+private let kItemH                  = kItemW * 0.8
+private let kItemMargin  : CGFloat  = 10
+private let kHeaderViewH : CGFloat  = 50
+private let kNormalCellID = "kNormalCellID"
+private let kHeaderViewID = "kHeaderViewID"
+private let kCellTag      = 1000
+
 class ShootMainViewController: UIViewController {
     
     let vm      = ShootViewModel()
@@ -17,24 +25,42 @@ class ShootMainViewController: UIViewController {
         
         let titleFrame = CGRect(x: 0, y:kStateBarH + kNavgationBarH,
                                 width: kScreenW, height: kMainTitleViewH)
-        let titles = ["航拍","乡镇","四季"]
+        let titles = ["四季","航拍","乡镇"]
         let titleView = PageTitleView(frame: titleFrame,
                                       titles: titles)
         titleView.delegate = self
         return titleView
         }()
+  
     
-    fileprivate lazy var tableView: UITableView = {[weak self] in
+    fileprivate lazy var collectionView:UICollectionView = {[unowned self]in
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: kItemW, height: kItemH)
+        layout.minimumLineSpacing = 10   //行间距
+        layout.minimumInteritemSpacing = kItemMargin
+        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
+        //设置section内边距
+        layout.sectionInset = UIEdgeInsets(top: 0, left: kItemMargin, bottom: 0, right: kItemMargin)
         
-        let heightNeedMinus :CGFloat = kStateBarH + kNavgationBarH + kMainTitleViewH + kTabBarH
-        let frame = CGRect.init(origin: CGPoint.init(x: 0, y: (self?.pageTitleView.frame.size.height)! + kStateBarH + kNavgationBarH),size: CGSize.init(width: kScreenH, height: kScreenH - heightNeedMinus))
-        let tv = UITableView.init(frame:frame)
+        let collectionY = kStateBarH + kNavgationBarH + kMainTitleViewH + 10
+        let collectionFrame = CGRect.init(x: 0, y: collectionY, width: kScreenW, height: kScreenH - collectionY)
+        let collectionView = UICollectionView(frame: collectionFrame, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+        //注册cell
+        collectionView.register(ShootCollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
+        //注册header
+        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
-        tv.delegate         = self?.vm
-        tv.dataSource       = self?.vm
-        tv.separatorStyle   = UITableViewCellSeparatorStyle.none
-        return tv
+        collectionView.backgroundColor = UIColor.white
         
+        return collectionView
+        }()
+
+    fileprivate lazy var collectionHead:ShootCollectionHeaderView = {[weak self] in
+        let head = ShootCollectionHeaderView.init(frame: CGRect.init(x: 10, y: 0, width: kScreenW-20, height: kHeaderViewH))
+        head.backgroundColor = UIColor.white
+        return head
         }()
     
     override func viewDidLoad() {
@@ -59,7 +85,8 @@ extension ShootMainViewController {
         automaticallyAdjustsScrollViewInsets = false
         self.navigationItem.title = "崇明摄协"
         view.addSubview(pageTitleView)
-        view.addSubview(tableView)
+        pageTitleView.backgroundColor = UIColor.white
+        view.addSubview(collectionView)
     }
 }
 
@@ -67,7 +94,57 @@ extension ShootMainViewController :PageTitleViewDelegate {
     func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
         
         self.model.cellType = ShootCellType(rawValue: index)!
-        tableView.reloadData()
 
     }
+}
+
+
+extension ShootMainViewController:UICollectionViewDataSource,UICollectionViewDelegate{
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        //取出section的headerView
+        let headerView :UICollectionReusableView
+        
+        headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        headerView.addSubview(collectionHead)
+
+        return headerView
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell :ShootCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! ShootCollectionViewCell
+        
+        var imgName = String()
+        
+        switch indexPath.section {
+        case 0:imgName = "spring\(indexPath.row+1).jpeg"
+        case 1:imgName = "summer\(indexPath.row+1)"
+        case 2:imgName = "autumn\(indexPath.row+1)"
+        case 3:imgName = "winer\(indexPath.row+1)"
+        default:
+            break
+        }
+        
+        cell.ivImg.image = UIImage(named:imgName)
+        cell.labAuthorName.text = "作者： XXX"
+        cell.labImgName.text = "图片的名字"
+        
+        return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+    
 }

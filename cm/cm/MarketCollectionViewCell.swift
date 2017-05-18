@@ -81,7 +81,7 @@ extension MarketCollectionViewCell {
         
         self.addSubview(shoppingCart)
         shoppingCart.snp.makeConstraints { (make) in
-            make.bottom.equalTo(0)
+            make.bottom.equalTo(-10)
             make.right.equalTo(-10)
             make.width.equalTo(20)
             make.height.equalTo(20)

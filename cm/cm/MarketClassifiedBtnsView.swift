@@ -105,15 +105,15 @@ extension MarketClassifiedBtnsView {
         bottomBtn.addTarget(self, action: #selector(bottomBtnAction(sender:)), for: .touchUpInside)
     }
     
-    func leftBtnAction(sender:UIButton) {
+    @objc private func leftBtnAction(sender:UIButton) {
         print("left Btn")
     }
     
-    func topBtnAction(sender:UIButton) {
+    @objc private func topBtnAction(sender:UIButton) {
         print("top Btn")
 
     }
-    func bottomBtnAction(sender:UIButton) {
+    @objc private func bottomBtnAction(sender:UIButton) {
         print("bottom Btn")
 
     }

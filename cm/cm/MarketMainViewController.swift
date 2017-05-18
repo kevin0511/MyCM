@@ -16,6 +16,7 @@ private let kTopViewH : CGFloat = 140
 
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
+private let kCellTag      = 1000
 
 
 class MarketMainViewController: UIViewController {
@@ -115,8 +116,13 @@ extension MarketMainViewController:UICollectionViewDataSource,UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell :MarketCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! MarketCollectionViewCell
         
-        
+        cell.shoppingCart.tag = kCellTag + indexPath.row
+        cell.shoppingCart.addTarget(self, action: #selector(cellBtnAction(sender:)), for: .touchUpInside)
         return cell
+    }
+    
+    @objc private func cellBtnAction(sender:UIButton){
+        print("购物车\(sender.tag - kCellTag)")
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

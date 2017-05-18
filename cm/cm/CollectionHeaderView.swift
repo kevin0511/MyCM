@@ -38,7 +38,7 @@ extension CollectionHeaderView {
         self.addSubview(imgViewL)
         self.imgViewL.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
-            make.left.equalTo(5)
+            make.left.equalTo(0)
             make.size.equalTo(CGSize.init(width: ivWidth, height: ivWidth))
         }
         self.imgViewL.image = UIImage(named:"market_star")

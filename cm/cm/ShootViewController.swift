@@ -10,25 +10,27 @@ import UIKit
 
 class ShootViewController: UIViewController {
 
-    let vm = ShootViewModel()
+    var vm          = ShootViewModel()
+    var model       = ShootModel()
+    let selfBounds  = CGRect.init(origin: CGPoint.zero, size: CGSize.init(width: kScreenW, height:kScreenH - (kStateBarH + kNavgationBarH + kMainTitleViewH + kTabBarH)))
     
     fileprivate lazy var tableView: UITableView = {[weak self] in
         
-        let heightNeedMinus :CGFloat = kStateBarH + kNavgationBarH + kMainTitleViewH + kTabBarH
-        let frame = CGRect.init(origin: CGPoint.zero,
-                                size: CGSize.init(width: kScreenH, height: kScreenH - heightNeedMinus))
-        let tv = UITableView.init(frame:frame)
-
+        let tv = UITableView.init(frame:(self?.selfBounds)!)
         tv.delegate         = self?.vm
         tv.dataSource       = self?.vm
         tv.separatorStyle   = UITableViewCellSeparatorStyle.none
+        tv.bounces          = false
         return tv
         
         }()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.vm.model = self.model
+        
         setupUI()
     }
 
@@ -44,6 +46,11 @@ class ShootViewController: UIViewController {
 extension ShootViewController {
 
     fileprivate func setupUI(){
+        
+        self.view.bounds = self.selfBounds
         view.addSubview(tableView)
+
+        
     }
+
 }

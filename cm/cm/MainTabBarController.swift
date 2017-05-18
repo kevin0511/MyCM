@@ -35,7 +35,7 @@ extension MainTabBarController{
         let meVC                = MeMainViewController()
         
         let arrVcs              = [activityVC,exportVC,meVC]
-        let arrTitles           = ["郊游","出口","我"]
+        let arrTitles           = ["郊游","优选","我的"]
         let arrImgs             = [UIImage(named:"tabbarActivity"),
                                    UIImage(named:"tabbarExport"),
                                    UIImage(named:"tabbarMe")]

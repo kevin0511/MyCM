@@ -1,0 +1,18 @@
+PODS:
+  - ReactiveSwift (1.1.0):
+    - Result (~> 3.1)
+  - Result (3.2.1)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - ReactiveSwift (~> 1.1)
+  - SnapKit (~> 3.2.0)
+
+SPEC CHECKSUMS:
+  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: dac8c5f0df926a0dc48f6b84bdf653fb6c7192ec
+
+COCOAPODS: 1.2.0

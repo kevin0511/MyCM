@@ -17,4 +17,6 @@ let kTabBarH            :CGFloat = 48
 let kMainTitleViewH     :CGFloat = 60
 
 
-let kColorMainGreen = UIColor(r:28,g:221,b:177)
+let kColorMainGreen     = UIColor(r:68 ,g:188,b:180)
+let kColorMainTitle     = UIColor(r:58 ,g:58 ,b:58 )
+let kColorMainSubTitle  = UIColor(r:123,g:123,b:123)

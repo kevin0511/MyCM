@@ -31,7 +31,7 @@ extension MainTabBarController{
         
         let shootVC             = ShootMainViewController()
         let activityVC          = ActivityMainViewController()
-        let exportVC            = ExportMainViewController()
+        let exportVC            = MarketMainViewController()
         let meVC                = MeMainViewController()
         
         let arrVcs              = [shootVC,activityVC,exportVC,meVC]

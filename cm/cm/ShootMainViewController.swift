@@ -17,7 +17,7 @@ class ShootMainViewController: UIViewController {
         
         let titleFrame = CGRect(x: 0, y:kStateBarH + kNavgationBarH,
                                 width: kScreenW, height: kMainTitleViewH)
-        let titles = ["航拍","乡镇","春","夏","秋","冬"]
+        let titles = ["航拍","乡镇","四季"]
         let titleView = PageTitleView(frame: titleFrame,
                                       titles: titles)
         titleView.delegate = self

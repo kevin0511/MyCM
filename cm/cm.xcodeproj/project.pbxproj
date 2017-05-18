@@ -14,7 +14,7 @@
 		0AA4C6D71EC838A700F84930 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6D61EC838A700F84930 /* UIColor-Extension.swift */; };
 		0AA4C6D91EC83C9600F84930 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6D81EC83C9600F84930 /* MainTabBarController.swift */; };
 		0AA4C6DB1EC8417C00F84930 /* MeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6DA1EC8417C00F84930 /* MeMainViewController.swift */; };
-		0AA4C6DD1EC8418800F84930 /* ExportMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6DC1EC8418800F84930 /* ExportMainViewController.swift */; };
+		0AA4C6DD1EC8418800F84930 /* MarketMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6DC1EC8418800F84930 /* MarketMainViewController.swift */; };
 		0AA4C6DF1EC8419800F84930 /* ActivityMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6DE1EC8419800F84930 /* ActivityMainViewController.swift */; };
 		0AA4C6E41EC8C7B400F84930 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6E21EC8C7B400F84930 /* PageTitleView.swift */; };
 		0AA4C6E51EC8C7B400F84930 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6E31EC8C7B400F84930 /* PageContentView.swift */; };
@@ -30,9 +30,15 @@
 		0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */; };
 		0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */; };
 		0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */; };
+		0AFC0A3A1ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */; };
+		0AFC0A3C1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */; };
+		0AFC0A3E1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A3D1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift */; };
+		0AFC0A401ECD824B007F5186 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A3F1ECD824B007F5186 /* CollectionHeaderView.swift */; };
+		3414DF55EE0934A03BF25DE4 /* Pods_CM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55EAD4389C29ADDC13BFF87 /* Pods_CM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		054143B0D5A0FCC4B5159783 /* Pods-CM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CM/Pods-CM.debug.xcconfig"; sourceTree = "<group>"; };
 		0AA4C6B91EC836BE00F84930 /* CM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA4C6BC1EC836BE00F84930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA4C6C31EC836BE00F84930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,7 +48,7 @@
 		0AA4C6D61EC838A700F84930 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		0AA4C6D81EC83C9600F84930 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0AA4C6DA1EC8417C00F84930 /* MeMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeMainViewController.swift; sourceTree = "<group>"; };
-		0AA4C6DC1EC8418800F84930 /* ExportMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportMainViewController.swift; sourceTree = "<group>"; };
+		0AA4C6DC1EC8418800F84930 /* MarketMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketMainViewController.swift; sourceTree = "<group>"; };
 		0AA4C6DE1EC8419800F84930 /* ActivityMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityMainViewController.swift; sourceTree = "<group>"; };
 		0AA4C6E21EC8C7B400F84930 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		0AA4C6E31EC8C7B400F84930 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,12 @@
 		0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainViewController.swift; sourceTree = "<group>"; };
 		0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootModel.swift; sourceTree = "<group>"; };
 		0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowView.swift; sourceTree = "<group>"; };
+		0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketClassifiedBtnsView.swift; sourceTree = "<group>"; };
+		0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkeBtn_Horizontal.swift; sourceTree = "<group>"; };
+		0AFC0A3D1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkeBtn_Longitudinal.swift; sourceTree = "<group>"; };
+		0AFC0A3F1ECD824B007F5186 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		57D4886A1559FCF90ADDC042 /* Pods-CM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CM/Pods-CM.release.xcconfig"; sourceTree = "<group>"; };
+		D55EAD4389C29ADDC13BFF87 /* Pods_CM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3414DF55EE0934A03BF25DE4 /* Pods_CM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,8 @@
 			children = (
 				0AA4C6BB1EC836BE00F84930 /* CM */,
 				0AA4C6BA1EC836BE00F84930 /* Products */,
+				5DB99FA6A1FFA2E9D527ECC1 /* Pods */,
+				DCC6E1CF031CA8F85A18E634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +116,7 @@
 			children = (
 				0AFC0A321ECC0F66007F5186 /* Shoot */,
 				0AA4C6D11EC836E700F84930 /* Activity */,
-				0AA4C6D01EC836E400F84930 /* Export */,
+				0AA4C6D01EC836E400F84930 /* Market */,
 				0AA4C6CF1EC836E200F84930 /* Me */,
 				0AA4C6EA1EC9F4BB00F84930 /* Main */,
 				0AA4C6D21EC8378100F84930 /* Tools */,
@@ -117,12 +132,15 @@
 			name = Me;
 			sourceTree = "<group>";
 		};
-		0AA4C6D01EC836E400F84930 /* Export */ = {
+		0AA4C6D01EC836E400F84930 /* Market */ = {
 			isa = PBXGroup;
 			children = (
-				0AA4C6DC1EC8418800F84930 /* ExportMainViewController.swift */,
+				0AA4C6DC1EC8418800F84930 /* MarketMainViewController.swift */,
+				0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */,
+				0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */,
+				0AFC0A3D1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift */,
 			);
-			name = Export;
+			name = Market;
 			sourceTree = "<group>";
 		};
 		0AA4C6D11EC836E700F84930 /* Activity */ = {
@@ -168,6 +186,7 @@
 		0AA4C6E11EC8C7A600F84930 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AFC0A3F1ECD824B007F5186 /* CollectionHeaderView.swift */,
 				0AA4C6E21EC8C7B400F84930 /* PageTitleView.swift */,
 				0AA4C6E31EC8C7B400F84930 /* PageContentView.swift */,
 				0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */,
@@ -278,6 +297,23 @@
 			name = Shoot;
 			sourceTree = "<group>";
 		};
+		5DB99FA6A1FFA2E9D527ECC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				054143B0D5A0FCC4B5159783 /* Pods-CM.debug.xcconfig */,
+				57D4886A1559FCF90ADDC042 /* Pods-CM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCC6E1CF031CA8F85A18E634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D55EAD4389C29ADDC13BFF87 /* Pods_CM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AA4C6CB1EC836BE00F84930 /* Build configuration list for PBXNativeTarget "CM" */;
 			buildPhases = (
+				EDA8877DDC3BE880D36BC594 /* [CP] Check Pods Manifest.lock */,
 				0AA4C6B51EC836BE00F84930 /* Sources */,
 				0AA4C6B61EC836BE00F84930 /* Frameworks */,
 				0AA4C6B71EC836BE00F84930 /* Resources */,
+				5E472FA37351BA30F1B176F1 /* [CP] Embed Pods Frameworks */,
+				C8484696F0E1F0ED33069E77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,6 +383,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E472FA37351BA30F1B176F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CM/Pods-CM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8484696F0E1F0ED33069E77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CM/Pods-CM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA8877DDC3BE880D36BC594 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0AA4C6B51EC836BE00F84930 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -352,6 +439,8 @@
 				0AA4C6DF1EC8419800F84930 /* ActivityMainViewController.swift in Sources */,
 				0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */,
 				0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */,
+				0AFC0A3E1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift in Sources */,
+				0AFC0A3A1ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift in Sources */,
 				0AA4C6E91EC8C8D800F84930 /* UIBarButtonItem-Extension.swift in Sources */,
 				0AA4C6D71EC838A700F84930 /* UIColor-Extension.swift in Sources */,
 				0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */,
@@ -359,6 +448,7 @@
 				0AA4C6E51EC8C7B400F84930 /* PageContentView.swift in Sources */,
 				0AA4C6D91EC83C9600F84930 /* MainTabBarController.swift in Sources */,
 				0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */,
+				0AFC0A3C1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift in Sources */,
 				0AA4C7021ECA103A00F84930 /* FoodsViewController.swift in Sources */,
 				0AA4C7041ECA104300F84930 /* SnacksViewController.swift in Sources */,
 				0AA4C6D41EC837A600F84930 /* Common.swift in Sources */,
@@ -367,8 +457,9 @@
 				0AA4C6E41EC8C7B400F84930 /* PageTitleView.swift in Sources */,
 				0AA4C7001ECA102B00F84930 /* PickViewController.swift in Sources */,
 				0AA4C6F51ECA049900F84930 /* ActivityMainModel.swift in Sources */,
+				0AFC0A401ECD824B007F5186 /* CollectionHeaderView.swift in Sources */,
 				0AA4C6DB1EC8417C00F84930 /* MeMainViewController.swift in Sources */,
-				0AA4C6DD1EC8418800F84930 /* ExportMainViewController.swift in Sources */,
+				0AA4C6DD1EC8418800F84930 /* MarketMainViewController.swift in Sources */,
 				0AA4C7061ECA104E00F84930 /* HotelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +573,7 @@
 		};
 		0AA4C6CC1EC836BE00F84930 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054143B0D5A0FCC4B5159783 /* Pods-CM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CM/Info.plist;
@@ -494,6 +586,7 @@
 		};
 		0AA4C6CD1EC836BE00F84930 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D4886A1559FCF90ADDC042 /* Pods-CM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CM/Info.plist;

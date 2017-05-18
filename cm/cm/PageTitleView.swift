@@ -18,14 +18,12 @@ protocol PageTitleViewDelegate : class {
 private let kScrollLineH : CGFloat = 2
 private let kNormalColor : (CGFloat,CGFloat,CGFloat) = (170,170,170)        //元组
 private let kSelectColor : (CGFloat,CGFloat,CGFloat) = (28,221,177 )
-private let kLabWidth    : CGFloat = 80
-
 
 //  MARK:- 定义PageTitleView类
 class PageTitleView: UIView {
     
     fileprivate let numberTag:Int = 1000
-
+    fileprivate var kLabWidth:CGFloat = 80
     fileprivate var titles:[String]                 //定义属性
     fileprivate var currentIndex : Int = 0
     weak var delegate : PageTitleViewDelegate?      //代理用weak
@@ -65,6 +63,8 @@ class PageTitleView: UIView {
 extension PageTitleView{
     
     fileprivate func setupUI(){
+        
+        if (titles.count == 3) {kLabWidth = kScreenW / CGFloat(titles.count)}
         
         addSubview(scrollView)                  //1- 添加  scrollview
         scrollView.frame = bounds

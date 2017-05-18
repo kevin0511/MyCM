@@ -8,40 +8,37 @@
 
 import UIKit
 
-private let heightSlide:CGFloat = 160
-
 private let kItemMargin:CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin)/2
-private let kItemH = kItemW * 3 / 4
+private let kItemH = kItemW * 1.5
 private let kHeaderViewH : CGFloat = 50
+private let kTopViewH : CGFloat = 140
 
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
 
-class ExportMainViewController: UIViewController {
-
+class MarketMainViewController: UIViewController {
     
-    fileprivate lazy var slideView: SlideShowView = {[weak self] in
-        
-        let frame = CGRect(x: 0, y:kStateBarH + kNavgationBarH,
-                                width: kScreenW, height: heightSlide)
-        let imgs = [UIImage]()
-        let slideView = SlideShowView(frame: frame, imgs: imgs)
-        //slideView.delegate = self
-        return slideView
-        }()
+    fileprivate lazy var topBtnsView:MarketClassifiedBtnsView = {[weak self] in
+    
+        let frame =  CGRect(x: 0, y:kStateBarH + kNavgationBarH,
+                            width: kScreenW, height: kTopViewH)
+        let view = MarketClassifiedBtnsView(frame :frame)
+        view.backgroundColor = UIColor.white
+        return view
+    }()
     
     fileprivate lazy var collectionView:UICollectionView = {[unowned self]in
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemW, height: kItemH)
-        layout.minimumLineSpacing = 0   //行间距
+        layout.minimumLineSpacing = 10   //行间距
         layout.minimumInteritemSpacing = kItemMargin
         layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
         //设置section内边距
         layout.sectionInset = UIEdgeInsets(top: 0, left: kItemMargin, bottom: 0, right: kItemMargin)
         
-        let collectionY = kStateBarH + kNavgationBarH + heightSlide
+        let collectionY = kStateBarH + kNavgationBarH + kTopViewH
         let collectionFrame = CGRect.init(x: 0, y: collectionY, width: kScreenW, height: kScreenH - collectionY)
         let collectionView = UICollectionView(frame: collectionFrame, collectionViewLayout: layout)
         collectionView.dataSource = self
@@ -51,11 +48,17 @@ class ExportMainViewController: UIViewController {
         //注册header
         collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
-        collectionView.backgroundColor = UIColor.red
+        collectionView.backgroundColor = UIColor.white
         
         return collectionView
         }()
     
+    
+    fileprivate lazy var collectionHead:CollectionHeaderView = {[weak self] in
+        let head = CollectionHeaderView.init(frame: CGRect.init(x: 10, y: 0, width: kScreenW-20, height: kHeaderViewH))
+        head.backgroundColor = UIColor.white
+        return head
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,37 +74,43 @@ class ExportMainViewController: UIViewController {
 }
 
 
-extension ExportMainViewController {
+extension MarketMainViewController {
 
     fileprivate func setupUI(){
         
+        view.backgroundColor = UIColor(r:245 ,g:245 ,b:245 )
         automaticallyAdjustsScrollViewInsets = false
         self.navigationItem.title = "当季优选"
-        view.addSubview(slideView)
+        
+        view.addSubview(topBtnsView)
         view.addSubview(collectionView)
+        
     }
 }
 
 
-extension ExportMainViewController:UICollectionViewDataSource{
+extension MarketMainViewController:UICollectionViewDataSource,UICollectionViewDelegate{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0{
-            return 8
-        }
-        return 4
+
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         //取出section的headerView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
-        headerView.backgroundColor = UIColor.blue
+        let headerView :UICollectionReusableView
+        
+        headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        view.backgroundColor = UIColor(r:245 ,g:245 ,b:245 )
+        headerView.addSubview(collectionHead)
+
         return headerView
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
@@ -109,6 +118,10 @@ extension ExportMainViewController:UICollectionViewDataSource{
         cell.backgroundColor = UIColor.lightGray
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
     
 }

@@ -26,13 +26,15 @@
 		0AA4C7041ECA104300F84930 /* SnacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7031ECA104300F84930 /* SnacksViewController.swift */; };
 		0AA4C7061ECA104E00F84930 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7051ECA104E00F84930 /* HotelViewController.swift */; };
 		0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7071ECA105600F84930 /* CyclingViewController.swift */; };
-		0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */; };
-		0AA4C7141ECDE3F400F84930 /* ShootCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7131ECDE3F400F84930 /* ShootCollectionViewCell.swift */; };
+		0AA4C7141ECDE3F400F84930 /* ShootListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7131ECDE3F400F84930 /* ShootListCollectionViewCell.swift */; };
 		0AD50A251ECD9533000A35F7 /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */; };
-		0AD50A271ECE8B7D000A35F7 /* ShootCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A261ECE8B7D000A35F7 /* ShootCollectionReusableView.swift */; };
+		0AD50A271ECE8B7D000A35F7 /* ShootListCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A261ECE8B7D000A35F7 /* ShootListCollectionReusableView.swift */; };
 		0AD50A291ECE9081000A35F7 /* MarketCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A281ECE9081000A35F7 /* MarketCollectionReusableView.swift */; };
+		0AD50A2F1ECEC93B000A35F7 /* ShootListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A2E1ECEC93B000A35F7 /* ShootListViewController.swift */; };
+		0AD50A311ECEC954000A35F7 /* ShootPhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A301ECEC954000A35F7 /* ShootPhotoDetailViewController.swift */; };
+		0AD50A361ECED01F000A35F7 /* ShootMainCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A351ECED01F000A35F7 /* ShootMainCollectionReusableView.swift */; };
+		0AD50A381ECED038000A35F7 /* ShootMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A371ECED038000A35F7 /* ShootMainCollectionViewCell.swift */; };
 		0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */; };
-		0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */; };
 		0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */; };
 		0AFC0A3A1ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */; };
 		0AFC0A3C1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */; };
@@ -63,13 +65,15 @@
 		0AA4C7031ECA104300F84930 /* SnacksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksViewController.swift; sourceTree = "<group>"; };
 		0AA4C7051ECA104E00F84930 /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		0AA4C7071ECA105600F84930 /* CyclingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclingViewController.swift; sourceTree = "<group>"; };
-		0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootViewModel.swift; sourceTree = "<group>"; };
-		0AA4C7131ECDE3F400F84930 /* ShootCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootCollectionViewCell.swift; sourceTree = "<group>"; };
+		0AA4C7131ECDE3F400F84930 /* ShootListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootListCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
-		0AD50A261ECE8B7D000A35F7 /* ShootCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootCollectionReusableView.swift; sourceTree = "<group>"; };
+		0AD50A261ECE8B7D000A35F7 /* ShootListCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootListCollectionReusableView.swift; sourceTree = "<group>"; };
 		0AD50A281ECE9081000A35F7 /* MarketCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketCollectionReusableView.swift; sourceTree = "<group>"; };
+		0AD50A2E1ECEC93B000A35F7 /* ShootListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootListViewController.swift; sourceTree = "<group>"; };
+		0AD50A301ECEC954000A35F7 /* ShootPhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootPhotoDetailViewController.swift; sourceTree = "<group>"; };
+		0AD50A351ECED01F000A35F7 /* ShootMainCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainCollectionReusableView.swift; sourceTree = "<group>"; };
+		0AD50A371ECED038000A35F7 /* ShootMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainViewController.swift; sourceTree = "<group>"; };
-		0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootModel.swift; sourceTree = "<group>"; };
 		0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowView.swift; sourceTree = "<group>"; };
 		0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketClassifiedBtnsView.swift; sourceTree = "<group>"; };
 		0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkeBtn_Horizontal.swift; sourceTree = "<group>"; };
@@ -302,14 +306,64 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		0AFC0A321ECC0F66007F5186 /* Shoot */ = {
+		0AD50A2B1ECEC8F5000A35F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AA4C7131ECDE3F400F84930 /* ShootListCollectionViewCell.swift */,
+				0AD50A261ECE8B7D000A35F7 /* ShootListCollectionReusableView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0AD50A2C1ECEC8FB000A35F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0AD50A2D1ECEC901000A35F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AD50A2E1ECEC93B000A35F7 /* ShootListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0AD50A321ECECE61000A35F7 /* ShootMain */ = {
 			isa = PBXGroup;
 			children = (
 				0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */,
-				0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */,
-				0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */,
-				0AA4C7131ECDE3F400F84930 /* ShootCollectionViewCell.swift */,
-				0AD50A261ECE8B7D000A35F7 /* ShootCollectionReusableView.swift */,
+				0AD50A351ECED01F000A35F7 /* ShootMainCollectionReusableView.swift */,
+				0AD50A371ECED038000A35F7 /* ShootMainCollectionViewCell.swift */,
+			);
+			name = ShootMain;
+			sourceTree = "<group>";
+		};
+		0AD50A331ECECE71000A35F7 /* ShootList */ = {
+			isa = PBXGroup;
+			children = (
+				0AD50A2D1ECEC901000A35F7 /* Controllers */,
+				0AD50A2C1ECEC8FB000A35F7 /* Models */,
+				0AD50A2B1ECEC8F5000A35F7 /* Views */,
+			);
+			name = ShootList;
+			sourceTree = "<group>";
+		};
+		0AD50A341ECECE81000A35F7 /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0AD50A301ECEC954000A35F7 /* ShootPhotoDetailViewController.swift */,
+			);
+			name = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		0AFC0A321ECC0F66007F5186 /* Shoot */ = {
+			isa = PBXGroup;
+			children = (
+				0AD50A321ECECE61000A35F7 /* ShootMain */,
+				0AD50A331ECECE71000A35F7 /* ShootList */,
+				0AD50A341ECECE81000A35F7 /* PhotoDetail */,
 			);
 			name = Shoot;
 			sourceTree = "<group>";
@@ -366,6 +420,7 @@
 				TargetAttributes = {
 					0AA4C6B81EC836BE00F84930 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S5A8LZTTH2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -453,20 +508,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD50A361ECED01F000A35F7 /* ShootMainCollectionReusableView.swift in Sources */,
 				0AA4C6DF1EC8419800F84930 /* ActivityMainViewController.swift in Sources */,
 				0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */,
-				0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */,
+				0AD50A311ECEC954000A35F7 /* ShootPhotoDetailViewController.swift in Sources */,
 				0AFC0A3E1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift in Sources */,
 				0AFC0A3A1ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift in Sources */,
 				0AA4C6E91EC8C8D800F84930 /* UIBarButtonItem-Extension.swift in Sources */,
 				0AA4C6D71EC838A700F84930 /* UIColor-Extension.swift in Sources */,
-				0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */,
 				0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */,
 				0AA4C6E51EC8C7B400F84930 /* PageContentView.swift in Sources */,
 				0AA4C6D91EC83C9600F84930 /* MainTabBarController.swift in Sources */,
 				0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */,
 				0AFC0A3C1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift in Sources */,
-				0AA4C7141ECDE3F400F84930 /* ShootCollectionViewCell.swift in Sources */,
+				0AD50A2F1ECEC93B000A35F7 /* ShootListViewController.swift in Sources */,
+				0AA4C7141ECDE3F400F84930 /* ShootListCollectionViewCell.swift in Sources */,
 				0AA4C7021ECA103A00F84930 /* FoodsViewController.swift in Sources */,
 				0AA4C7041ECA104300F84930 /* SnacksViewController.swift in Sources */,
 				0AA4C6D41EC837A600F84930 /* Common.swift in Sources */,
@@ -476,9 +532,10 @@
 				0AA4C7001ECA102B00F84930 /* PickViewController.swift in Sources */,
 				0AA4C6F51ECA049900F84930 /* ActivityMainModel.swift in Sources */,
 				0AA4C6DB1EC8417C00F84930 /* MeMainViewController.swift in Sources */,
-				0AD50A271ECE8B7D000A35F7 /* ShootCollectionReusableView.swift in Sources */,
+				0AD50A271ECE8B7D000A35F7 /* ShootListCollectionReusableView.swift in Sources */,
 				0AA4C6DD1EC8418800F84930 /* MarketMainViewController.swift in Sources */,
 				0AD50A291ECE9081000A35F7 /* MarketCollectionReusableView.swift in Sources */,
+				0AD50A381ECED038000A35F7 /* ShootMainCollectionViewCell.swift in Sources */,
 				0AD50A251ECD9533000A35F7 /* MarketCollectionViewCell.swift in Sources */,
 				0AA4C7061ECA104E00F84930 /* HotelViewController.swift in Sources */,
 			);
@@ -596,7 +653,9 @@
 			baseConfigurationReference = 054143B0D5A0FCC4B5159783 /* Pods-CM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S5A8LZTTH2;
 				INFOPLIST_FILE = CM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = k.CM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -609,7 +668,9 @@
 			baseConfigurationReference = 57D4886A1559FCF90ADDC042 /* Pods-CM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S5A8LZTTH2;
 				INFOPLIST_FILE = CM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = k.CM;
 				PRODUCT_NAME = "$(TARGET_NAME)";

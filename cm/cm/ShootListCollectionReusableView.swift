@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShootCollectionReusableView: UICollectionReusableView {
+class ShootListCollectionReusableView: UICollectionReusableView {
     
     lazy var ivNext     = UIImageView()
     lazy var labWord    = UILabel()
@@ -28,7 +28,7 @@ class ShootCollectionReusableView: UICollectionReusableView {
 }
 
 
-extension ShootCollectionReusableView {
+extension ShootListCollectionReusableView {
     
     fileprivate func setupUI(){
         

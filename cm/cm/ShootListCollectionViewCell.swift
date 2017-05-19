@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ShootCollectionViewCell: UICollectionViewCell {
+class ShootListCollectionViewCell: UICollectionViewCell {
     
     lazy var ivImg              = UIImageView()
     lazy var labImgName         = UILabel()
@@ -30,7 +30,7 @@ class ShootCollectionViewCell: UICollectionViewCell {
 }
 
 
-extension ShootCollectionViewCell {
+extension ShootListCollectionViewCell {
     
     fileprivate func setupUI(){
         

@@ -47,20 +47,14 @@ class MarketMainViewController: UIViewController {
         //注册cell
         collectionView.register(MarketCollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
         //注册header
-        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionView.register(MarketCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
         collectionView.backgroundColor = UIColor.white
         
         return collectionView
         }()
     
-    
-    fileprivate lazy var collectionHead:MarketCollectionHeaderView = {[weak self] in
-        let head = MarketCollectionHeaderView.init(frame: CGRect.init(x: 10, y: 0, width: kScreenW-20, height: kHeaderViewH))
-        head.backgroundColor = UIColor.white
-        return head
-    }()
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -103,12 +97,9 @@ extension MarketMainViewController:UICollectionViewDataSource,UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         //取出section的headerView
-        let headerView :UICollectionReusableView
-        
-        headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
-        view.backgroundColor = UIColor(r:245 ,g:245 ,b:245 )
-        headerView.addSubview(collectionHead)
-        collectionHead.title.text = "活动推荐"
+        var headerView = MarketCollectionReusableView()
+        headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! MarketCollectionReusableView
+       
         return headerView
     }
     

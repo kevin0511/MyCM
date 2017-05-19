@@ -1,15 +1,15 @@
 //
-//  ShootCollectionHeaderView.swift
+//  ShootCollectionReusableView.swift
 //  cm
 //
-//  Created by Kevin on 2017/5/18.
+//  Created by kevin.zhang on 2017/5/19.
 //  Copyright © 2017年 Kevin. All rights reserved.
 //
 
 import UIKit
 
-class ShootCollectionHeaderView: UIView {
-
+class ShootCollectionReusableView: UICollectionReusableView {
+    
     lazy var ivNext     = UIImageView()
     lazy var labWord    = UILabel()
     lazy var labTitle   = UILabel()
@@ -25,19 +25,19 @@ class ShootCollectionHeaderView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }
 
-extension ShootCollectionHeaderView {
 
-    fileprivate func setupUI(){
+extension ShootCollectionReusableView {
     
+    fileprivate func setupUI(){
+        
         let ivWidth:CGFloat = 20
-
+        
         self.addSubview(ivNext)
         ivNext.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
-            make.right.equalTo(0)
+            make.right.equalTo(-5)
             make.size.equalTo(CGSize.init(width: ivWidth, height: ivWidth))
         }
         self.ivNext.image = UIImage(named:"market_right")
@@ -51,7 +51,7 @@ extension ShootCollectionHeaderView {
         btn.titleLabel!.textAlignment = .right
         btn.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
-            make.right.equalTo(ivNext.snp.left).offset(-5)
+            make.right.equalTo(ivNext.snp.left)
             make.size.equalTo(CGSize.init(width: 60, height: ivWidth))
         }
         
@@ -67,7 +67,7 @@ extension ShootCollectionHeaderView {
         
         self.addSubview(labTitle)
         labTitle.snp.makeConstraints { (make) in
-
+            
             make.left.equalTo(labWord.snp.right).offset(5)
             make.right.equalTo(btn.snp.left).offset(-10)
             make.bottom.equalTo(labWord.snp.bottom).offset(3)
@@ -79,5 +79,5 @@ extension ShootCollectionHeaderView {
         
         
     }
-
+    
 }

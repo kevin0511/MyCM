@@ -28,15 +28,15 @@
 		0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7071ECA105600F84930 /* CyclingViewController.swift */; };
 		0AA4C70A1ECA1B0F00F84930 /* ShootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */; };
 		0AA4C7141ECDE3F400F84930 /* ShootCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7131ECDE3F400F84930 /* ShootCollectionViewCell.swift */; };
-		0AA4C7171ECDFA5900F84930 /* ShootCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C7161ECDFA5900F84930 /* ShootCollectionHeaderView.swift */; };
 		0AD50A251ECD9533000A35F7 /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */; };
+		0AD50A271ECE8B7D000A35F7 /* ShootCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A261ECE8B7D000A35F7 /* ShootCollectionReusableView.swift */; };
+		0AD50A291ECE9081000A35F7 /* MarketCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50A281ECE9081000A35F7 /* MarketCollectionReusableView.swift */; };
 		0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */; };
 		0AFC0A361ECC1B7C007F5186 /* ShootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */; };
 		0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */; };
 		0AFC0A3A1ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */; };
 		0AFC0A3C1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */; };
 		0AFC0A3E1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A3D1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift */; };
-		0AFC0A401ECD824B007F5186 /* MarketCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0A3F1ECD824B007F5186 /* MarketCollectionHeaderView.swift */; };
 		3414DF55EE0934A03BF25DE4 /* Pods_CM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55EAD4389C29ADDC13BFF87 /* Pods_CM.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,15 +65,15 @@
 		0AA4C7071ECA105600F84930 /* CyclingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclingViewController.swift; sourceTree = "<group>"; };
 		0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootViewModel.swift; sourceTree = "<group>"; };
 		0AA4C7131ECDE3F400F84930 /* ShootCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootCollectionViewCell.swift; sourceTree = "<group>"; };
-		0AA4C7161ECDFA5900F84930 /* ShootCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootCollectionHeaderView.swift; sourceTree = "<group>"; };
 		0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
+		0AD50A261ECE8B7D000A35F7 /* ShootCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootCollectionReusableView.swift; sourceTree = "<group>"; };
+		0AD50A281ECE9081000A35F7 /* MarketCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketCollectionReusableView.swift; sourceTree = "<group>"; };
 		0AFC0A331ECC0F84007F5186 /* ShootMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootMainViewController.swift; sourceTree = "<group>"; };
 		0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootModel.swift; sourceTree = "<group>"; };
 		0AFC0A371ECC2AD0007F5186 /* SlideShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowView.swift; sourceTree = "<group>"; };
 		0AFC0A391ECD1F5D007F5186 /* MarketClassifiedBtnsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketClassifiedBtnsView.swift; sourceTree = "<group>"; };
 		0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkeBtn_Horizontal.swift; sourceTree = "<group>"; };
 		0AFC0A3D1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkeBtn_Longitudinal.swift; sourceTree = "<group>"; };
-		0AFC0A3F1ECD824B007F5186 /* MarketCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketCollectionHeaderView.swift; sourceTree = "<group>"; };
 		57D4886A1559FCF90ADDC042 /* Pods-CM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CM/Pods-CM.release.xcconfig"; sourceTree = "<group>"; };
 		D55EAD4389C29ADDC13BFF87 /* Pods_CM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -297,7 +297,7 @@
 				0AFC0A3B1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift */,
 				0AFC0A3D1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift */,
 				0AD50A241ECD9533000A35F7 /* MarketCollectionViewCell.swift */,
-				0AFC0A3F1ECD824B007F5186 /* MarketCollectionHeaderView.swift */,
+				0AD50A281ECE9081000A35F7 /* MarketCollectionReusableView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -309,7 +309,7 @@
 				0AA4C7091ECA1B0F00F84930 /* ShootViewModel.swift */,
 				0AFC0A351ECC1B7C007F5186 /* ShootModel.swift */,
 				0AA4C7131ECDE3F400F84930 /* ShootCollectionViewCell.swift */,
-				0AA4C7161ECDFA5900F84930 /* ShootCollectionHeaderView.swift */,
+				0AD50A261ECE8B7D000A35F7 /* ShootCollectionReusableView.swift */,
 			);
 			name = Shoot;
 			sourceTree = "<group>";
@@ -464,7 +464,6 @@
 				0AA4C7081ECA105600F84930 /* CyclingViewController.swift in Sources */,
 				0AA4C6E51EC8C7B400F84930 /* PageContentView.swift in Sources */,
 				0AA4C6D91EC83C9600F84930 /* MainTabBarController.swift in Sources */,
-				0AA4C7171ECDFA5900F84930 /* ShootCollectionHeaderView.swift in Sources */,
 				0AFC0A381ECC2AD0007F5186 /* SlideShowView.swift in Sources */,
 				0AFC0A3C1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift in Sources */,
 				0AA4C7141ECDE3F400F84930 /* ShootCollectionViewCell.swift in Sources */,
@@ -476,9 +475,10 @@
 				0AA4C6E41EC8C7B400F84930 /* PageTitleView.swift in Sources */,
 				0AA4C7001ECA102B00F84930 /* PickViewController.swift in Sources */,
 				0AA4C6F51ECA049900F84930 /* ActivityMainModel.swift in Sources */,
-				0AFC0A401ECD824B007F5186 /* MarketCollectionHeaderView.swift in Sources */,
 				0AA4C6DB1EC8417C00F84930 /* MeMainViewController.swift in Sources */,
+				0AD50A271ECE8B7D000A35F7 /* ShootCollectionReusableView.swift in Sources */,
 				0AA4C6DD1EC8418800F84930 /* MarketMainViewController.swift in Sources */,
+				0AD50A291ECE9081000A35F7 /* MarketCollectionReusableView.swift in Sources */,
 				0AD50A251ECD9533000A35F7 /* MarketCollectionViewCell.swift in Sources */,
 				0AA4C7061ECA104E00F84930 /* HotelViewController.swift in Sources */,
 			);

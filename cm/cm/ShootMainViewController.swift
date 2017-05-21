@@ -9,7 +9,7 @@
 import UIKit
 
 private let kItemW                  = (kScreenW - 3 * kItemMargin)/2
-private let kItemH                  = kItemW / 5 * 3 + 30
+private let kItemH                  = kItemW / 5 * 3 + 28
 private let kItemMargin  : CGFloat  = 10
 private let kHeaderViewH : CGFloat  = 70
 private let kTopViewH    : CGFloat   = 120
@@ -74,9 +74,9 @@ extension ShootMainViewController {
     
     fileprivate func setupUI(){
         
+        view.backgroundColor = kColorMainGrayBG
         automaticallyAdjustsScrollViewInsets = false
         self.navigationItem.title = "崇明摄协"
-        view.backgroundColor = kColorMainGrayBG
         
         view.addSubview(viewTop)
         viewTop.snp.makeConstraints { (make) in
@@ -100,7 +100,7 @@ extension ShootMainViewController:UICollectionViewDataSource,UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 2
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -114,7 +114,7 @@ extension ShootMainViewController:UICollectionViewDataSource,UICollectionViewDel
         
         switch indexPath.section {
         case 0:
-            title       = "人间四季"
+            title       = "四季轮回"
             subTitle    = "二十四节气"
             imgName     = "四季"
         case 1:
@@ -123,7 +123,7 @@ extension ShootMainViewController:UICollectionViewDataSource,UICollectionViewDel
             imgName     = "航拍"
         case 2:
             title       = "乡镇风景"
-            subTitle    = "欣赏乡镇之美"
+            subTitle    = "乡镇之美"
             imgName     = "乡镇"
         default:
             break
@@ -155,10 +155,9 @@ extension ShootMainViewController:UICollectionViewDataSource,UICollectionViewDel
         var imgName = String()
         
         switch indexPath.section {
-        case 0:imgName = "spring\(indexPath.row+1).jpeg"
-        case 1:imgName = "summer\(indexPath.row+1).jpg"
-        case 2:imgName = "autumn\(indexPath.row+1)"
-        case 3:imgName = "winer\(indexPath.row+1).jpg"
+        case 0:imgName = "seasons\(indexPath.row+1).jpeg"
+        case 1:imgName = "aerial\(indexPath.row+1).jpg"
+        case 2:imgName = "spring\(indexPath.row+1)"
         default:
             break
         }

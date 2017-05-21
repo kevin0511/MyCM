@@ -67,7 +67,7 @@ extension MainTabBarController{
         vc.tabBarItem.title         = title
         vc.tabBarItem.image         = img
         vc.tabBarItem.selectedImage = imgHL
-        vc.view.backgroundColor     = UIColor.white
+        vc.view.backgroundColor     = kColorMainGrayBG
         
         self.addChildViewController(setNavControllerWithRootVC(rootVC: vc))
     }

@@ -18,10 +18,11 @@ class ActivityMainViewController: UIViewController {
         
         let titleFrame = CGRect(x: 0, y:kStateBarH + kNavgationBarH,
                                 width: kScreenW, height: kMainTitleViewH)
-        let titles = ["采摘园","享美食","品小吃","酒店名宿","乐骑行"]
+        let titles = ["主推","采摘","享美食","农家风情","乐骑行"]
         let titleView = PageTitleView(frame: titleFrame,
                                       titles: titles)
         titleView.delegate = self
+        titleView.backgroundColor = UIColor.white
         return titleView
         }()
     
@@ -33,15 +34,15 @@ class ActivityMainViewController: UIViewController {
         
         var childVcs    = [UIViewController]()
         
+        let recommendVC = RecommendViewController()
         let pickVC      = PickViewController()
         let foodsVC     = FoodsViewController()
-        let snackVC     = SnacksViewController()
         let hotelVC     = HotelViewController()
         let cyclingVC   = CyclingViewController()
         
+        childVcs.append(recommendVC)
         childVcs.append(pickVC)
         childVcs.append(foodsVC)
-        childVcs.append(snackVC)
         childVcs.append(hotelVC)
         childVcs.append(cyclingVC)
         
@@ -51,6 +52,10 @@ class ActivityMainViewController: UIViewController {
             
             self?.addChildViewController(vc)
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+            
+            if vc == recommendVC {
+                vc.view.backgroundColor = UIColor.white
+            }
         }
         
         let contentView = PageContentView(frame: contentViewFrame, childVcs: childVcs, parentViewController: self)

@@ -14,22 +14,28 @@ class MeMainViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationItem.title = "我的主页"
+        setupUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+
+}
+
+
+extension MeMainViewController {
+
+    fileprivate func setupUI(){
+        
+        let btn = UIButton.init(type: .custom)
+        btn.frame = CGRect.init(x: 10, y: 74, width: 80, height: 30)
+        btn.backgroundColor = UIColor.lightGray
+        view.addSubview(btn)
+        btn.addTarget(self, action: #selector(btnAction(sender:)), for: .touchUpInside)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc private func btnAction(sender:UIButton) {
+        self.navigationController?.pushViewController(CalendarManagerViewController(), animated: true)
     }
-    */
-
 }

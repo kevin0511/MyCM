@@ -1,18 +1,21 @@
 PODS:
+  - FSCalendar (2.7.4)
   - ReactiveSwift (1.1.1):
     - Result (~> 3.2)
   - Result (3.2.1)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
+  - FSCalendar (~> 2.7.4)
   - ReactiveSwift (~> 1.1)
   - SnapKit (~> 3.2.0)
 
 SPEC CHECKSUMS:
+  FSCalendar: e95995a746acae531c4a7dd636b8393233125ec5
   ReactiveSwift: 2489549e3231a6ff68ec99f3d320bb264f10ba0a
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: dac8c5f0df926a0dc48f6b84bdf653fb6c7192ec
+PODFILE CHECKSUM: 7beb65e07b05b433349e2f1aa5436400f1538239
 
 COCOAPODS: 1.2.1

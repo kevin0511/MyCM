@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9319631ED5774200B02A06 /* CalendarManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9319621ED5774200B02A06 /* CalendarManagerViewController.swift */; };
+		0A9319651ED589CC00B02A06 /* CalendarManagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9319641ED589CC00B02A06 /* CalendarManagerCell.swift */; };
 		0AA4C6BD1EC836BE00F84930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4C6BC1EC836BE00F84930 /* AppDelegate.swift */; };
 		0AA4C6C41EC836BE00F84930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA4C6C31EC836BE00F84930 /* Assets.xcassets */; };
 		0AA4C6C71EC836BE00F84930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA4C6C51EC836BE00F84930 /* LaunchScreen.storyboard */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		054143B0D5A0FCC4B5159783 /* Pods-CM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CM/Pods-CM.debug.xcconfig"; sourceTree = "<group>"; };
+		0A9319621ED5774200B02A06 /* CalendarManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarManagerViewController.swift; sourceTree = "<group>"; };
+		0A9319641ED589CC00B02A06 /* CalendarManagerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarManagerCell.swift; sourceTree = "<group>"; };
 		0AA4C6B91EC836BE00F84930 /* CM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA4C6BC1EC836BE00F84930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA4C6C31EC836BE00F84930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9319661ED58DFC00B02A06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A9319641ED589CC00B02A06 /* CalendarManagerCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		0AA4C6B01EC836BE00F84930 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				0AA4C6DE1EC8419800F84930 /* ActivityMainViewController.swift */,
+				0A9319621ED5774200B02A06 /* CalendarManagerViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +262,7 @@
 		0AA4C6F61ECA0BD200F84930 /* ActivityMain */ = {
 			isa = PBXGroup;
 			children = (
+				0A9319661ED58DFC00B02A06 /* View */,
 				0AA4C6ED1ECA041D00F84930 /* Controllers */,
 				0AA4C6EF1ECA043200F84930 /* ViewModel */,
 				0AA4C6EE1ECA042400F84930 /* Model */,
@@ -513,6 +527,7 @@
 			files = (
 				0AD50A361ECED01F000A35F7 /* ShootMainCollectionReusableView.swift in Sources */,
 				0AA4C6DF1EC8419800F84930 /* ActivityMainViewController.swift in Sources */,
+				0A9319631ED5774200B02A06 /* CalendarManagerViewController.swift in Sources */,
 				0AFC0A341ECC0F84007F5186 /* ShootMainViewController.swift in Sources */,
 				0AD50A311ECEC954000A35F7 /* ShootPhotoDetailViewController.swift in Sources */,
 				0AFC0A3E1ECD2A27007F5186 /* MarkeBtn_Longitudinal.swift in Sources */,
@@ -526,6 +541,7 @@
 				0AFC0A3C1ECD1FA2007F5186 /* MarkeBtn_Horizontal.swift in Sources */,
 				0AD50A2F1ECEC93B000A35F7 /* ShootListViewController.swift in Sources */,
 				0AA4C7141ECDE3F400F84930 /* ShootListCollectionViewCell.swift in Sources */,
+				0A9319651ED589CC00B02A06 /* CalendarManagerCell.swift in Sources */,
 				0AA4C7021ECA103A00F84930 /* FoodsViewController.swift in Sources */,
 				0AA4C7041ECA104300F84930 /* RecommendViewController.swift in Sources */,
 				0AA4C6D41EC837A600F84930 /* Common.swift in Sources */,

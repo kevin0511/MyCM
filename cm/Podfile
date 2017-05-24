@@ -7,5 +7,6 @@ target 'CM' do
 
   pod 'SnapKit', '~> 3.2.0'
   pod 'ReactiveSwift', '~> 1.1'
+  pod ‘FSCalendar', '~> 2.7.4'
 
 end

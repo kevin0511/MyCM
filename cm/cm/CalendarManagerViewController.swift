@@ -42,13 +42,10 @@ class CalendarManagerViewController: UIViewController {
         calendar.appearance.eventOffset = CGPoint(x: 0, y: -7)
         calendar.today = nil // Hide the today circle
         calendar.register(CalendarManagerCell.self, forCellReuseIdentifier: "cell")
-        //        calendar.clipsToBounds = true // Remove top/bottom line
+        calendar.clipsToBounds = true // Remove top/bottom line
         
         calendar.swipeToChooseGesture.isEnabled = true // Swipe-To-Choose
-        
-        let scopeGesture = UIPanGestureRecognizer(target: calendar, action: #selector(calendar.handleScopeGesture(_:)));
-        calendar.addGestureRecognizer(scopeGesture)
-        
+
 
     }
 
@@ -57,6 +54,19 @@ class CalendarManagerViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.calendar.reloadData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        print(self.calendar.selectedDates)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,24 +80,16 @@ extension CalendarManagerViewController {
     fileprivate func setupUI(){
         
         self.title = "住宿日历详情"
-        // Uncomment this to perform an 'initial-week-scope'
-        // self.calendar.scope = FSCalendarScopeWeek;
-        
-        let dates = [
-//            self.gregorian.date(byAdding: .day, value: -1, to: Date()),
-//            Date(),
-//            self.gregorian.date(byAdding: .day, value: 1, to: Date()),
-//            self.gregorian.date(byAdding: .day, value: 5, to: Date()),
-//            self.formatter.date(from: "2017-05-11"),
-            self.formatter.date(from: "2017-06-11")
-        ]
-        dates.forEach { (date) in
-            self.calendar.select(date, scrollToDate: false)
-        }
-        // For UITest
-        //self.calendar.accessibilityIdentifier = "calendar"
 
-    
+        let dates = [
+            self.formatter.date(from: "2017-05-30"),
+            self.formatter.date(from: "2017-06-11"),
+            self.formatter.date(from: "2017-06-16")
+        ]
+        
+        dates.forEach { (date) in
+            //self.calendar.select(date, scrollToDate: false)
+        }
     }
 }
 
@@ -119,7 +121,7 @@ extension CalendarManagerViewController:FSCalendarDataSource, FSCalendarDelegate
     
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
         self.calendar.frame.size.height = bounds.height
-        self.eventLabel.frame.origin.y = calendar.frame.maxY + 10
+       // self.eventLabel.frame.origin.y = calendar.frame.maxY + 10
     }
     
     func calendar(_ calendar: FSCalendar, shouldSelect date: Date, at monthPosition: FSCalendarMonthPosition)   -> Bool {
@@ -132,15 +134,13 @@ extension CalendarManagerViewController:FSCalendarDataSource, FSCalendarDelegate
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         
-        
-        
         print("did select date \(self.formatter.string(from: date))")
-        self.configureVisibleCells()
+        //self.configureVisibleCells()
     }
     
     func calendar(_ calendar: FSCalendar, didDeselect date: Date) {
         print("did deselect date \(self.formatter.string(from: date))")
-        self.configureVisibleCells()
+        //self.configureVisibleCells()
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventDefaultColorsFor date: Date) -> [UIColor]? {
@@ -166,11 +166,45 @@ extension CalendarManagerViewController:FSCalendarDataSource, FSCalendarDelegate
         // Custom today circle
         diyCell.circleImageView.isHidden = !self.gregorian.isDateInToday(date)
         // Configure selection layer
+        
+        //判断是这个月
         if position == .current {
+            
+            var today = Date()
+            if self.gregorian.isDateInToday(date) {
+                today = date
+            }
+            let strDate     = self.formatter.string(from: date)
+            let strToday    = self.formatter.string(from: today)
+
+            //比较日期大小
+            let result:ComparisonResult = strDate.compare(strToday)
+            
+            switch result {
+            case ComparisonResult.orderedAscending:
+                //print("past \(date)")
+                diyCell.isUserInteractionEnabled = false;
+                diyCell.titleLabel.textColor = UIColor.lightGray
+            case ComparisonResult.orderedSame:
+                //print("same \(date)")
+                diyCell.titleLabel.textColor = UIColor.lightGray
+                diyCell.isUserInteractionEnabled = false;
+            case ComparisonResult.orderedDescending:
+                //print("future \(date)")
+                diyCell.titleLabel.textColor = UIColor.darkGray
+                diyCell.isUserInteractionEnabled = true;
+            }
+            
+//            if calendar.selectedDates.contains(date){
+//                diyCell.titleLabel.textColor = UIColor.lightGray
+//                diyCell.isUserInteractionEnabled = false;
+//            }
             
             var selectionType = SelectionType.none
             
-            if calendar.selectedDates.contains(date) {
+            if calendar.selectedDates.contains(date)
+            {
+                
                 let previousDate = self.gregorian.date(byAdding: .day, value: -1, to: date)!
                 let nextDate = self.gregorian.date(byAdding: .day, value: 1, to: date)!
                 if calendar.selectedDates.contains(date) {
@@ -203,5 +237,4 @@ extension CalendarManagerViewController:FSCalendarDataSource, FSCalendarDelegate
             diyCell.selectionLayer.isHidden = true
         }
     }
-
 }
